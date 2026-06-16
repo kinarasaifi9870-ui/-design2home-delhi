@@ -1,28 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Design2Home</title>
+
 <style>
-body{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-text-align:center;
-padding:50px;
-background:#f5f5f5;
 }
-h1{
+
+body{
+background:#f5f7fa;
 color:#333;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:#f59e0b;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.services{
+padding:60px 20px;
+text-align:center;
+}
+
+.services h2{
+margin-bottom:30px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact{
+background:#111827;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:15px;
 }
 </style>
 </head>
+
 <body>
 
+<section class="hero">
 <h1>Design2Home</h1>
-
 <p>Interior & Exterior Contractor</p>
+<p>Furniture | MS & SS Fabrication | Renovation Works</p>
+<a href="tel:9520479437" class="btn">Call Now</a>
+</section>
 
-<p>Furniture | MS & SS Fabrication | Renovation Work</p>
+<section class="services">
+<h2>Our Services</h2>
 
+<div class="grid">
+
+<div class="card">
+<h3>Interior Design</h3>
+<p>Modern Home & Office Interiors</p>
+</div>
+
+<div class="card">
+<h3>Furniture Work</h3>
+<p>Modular Kitchen, Wardrobe & Custom Furniture</p>
+</div>
+
+<div class="card">
+<h3>MS & SS Fabrication</h3>
+<p>Gates, Railings, Partitions & Structures</p>
+</div>
+
+<div class="card">
+<h3>Exterior Work</h3>
+<p>ACP, HPL, Elevation & Outdoor Solutions</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
 <p>📞 9520479437</p>
+<p>Design2Home - Complete Interior & Exterior Solutions</p>
+</section>
 
 </body>
 </html>
